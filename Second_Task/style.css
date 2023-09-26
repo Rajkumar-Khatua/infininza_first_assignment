@@ -1,0 +1,632 @@
+html {
+  scroll-behavior: smooth;
+  overflow: auto;
+}
+
+body {
+  background: #000000;
+  margin: 0;
+  padding: 20px 30px;
+  color: #fff;
+  font-family: inner;
+  font-family: "Nunito", sans-serif;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #da3832f1;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Logo */
+.logo {
+  height: 60px;
+  width: 60px;
+  cursor: pointer;
+}
+.menu{
+  cursor: pointer;
+}
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  height: 100vh;
+}
+.title {
+  text-align: center;
+  font-size: 132px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.line {
+  margin-bottom: 50px;
+}
+.pyramid {
+  position: relative;
+  margin-right: 50px;
+  margin-left: 30px;
+}
+
+.ball {
+  width: 50px;
+  height: 50px;
+  background-color: #da3832f1;
+  filter: blur(5px);
+  border-radius: 50%;
+  position: absolute;
+  animation: bounce 1s infinite alternate;
+  text-align: center;
+}
+
+.ball:nth-child(1) {
+  top: 70px;
+  left: 10%;
+  transform: translateX(-50%);
+}
+
+.ball:nth-child(2) {
+  top: 100px;
+  left: 70%;
+}
+
+.ball:nth-child(3) {
+  top: 100px;
+  right: 55%;
+}
+.FiveBal {
+  display: flex;
+  gap: -10px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.balls {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(218, 56, 50);
+}
+/* Connect the balls */
+.balls:nth-child(1) {
+  margin-right: -15px;
+  background-color: rgba(218, 56, 50, 0.2);
+  filter: blur(5px);
+}
+.balls:nth-child(2) {
+  margin-right: -15px;
+  background-color: rgba(218, 56, 50, 0.3);
+  filter: blur(5px);
+}
+.balls:nth-child(3) {
+  margin-right: -15px;
+  background-color: rgba(218, 56, 50, 0.4);
+  filter: blur(5px);
+}
+.balls:nth-child(4) {
+  margin-right: -15px;
+  background-color: rgba(218, 56, 50, 0.5);
+  filter: blur(5px);
+}
+.balls:nth-child(5) {
+  margin-right: -15px;
+  background-color: rgba(218, 56, 50, 0.74);
+  filter: blur(5px);
+}
+/* Second Section    */
+.secondSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  height: 100vh;
+}
+.circle-container {
+  width: 40%;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.6;
+    box-shadow: 0px 0px 20px rgb(238, 104, 70);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.planet {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circle-1,
+.circle-2,
+.circle-3,
+.circle-4,
+.circle-5 {
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: wave-animation 3s infinite;
+  filter: blur(10px);
+  /* margin-left: 50px; */
+}
+
+.circle-1 {
+  height: 530px;
+  width: 530px;
+  background-color: rgba(238, 90, 54, 1);
+  border: 0px;
+  animation-delay: 0s;
+}
+
+.circle-2 {
+  height: 450px;
+  width: 450px;
+  background-color: rgba(221, 79, 48, 1);
+  border: 0px;
+  animation-delay: 0.5s;
+}
+
+.circle-3 {
+  height: 370px;
+  width: 370px;
+  background-color: rgba(233, 149, 57, 1);
+  border: 0px;
+  animation-delay: 1s;
+}
+
+.circle-4 {
+  height: 290px;
+  width: 290px;
+  background-color: rgba(249, 222, 75, 1);
+  border: 0px;
+  animation-delay: 1s;
+}
+
+.circle-5 {
+  height: 210px;
+  width: 210px;
+  background-color: rgba(249, 222, 75, 1);
+  border: 0px;
+  animation-delay: 1.5s;
+}
+
+.textContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: left;
+  width: 40%;
+}
+.contain {
+  font-size: 30px;
+}
+.contain2 {
+  font-size: 30px;
+}
+
+/* Third Section */
+.thirdSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+.boxContain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.box {
+  width: 100%;
+  height: 100%;
+}
+.textCon {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.textTC {
+  font-size: 30px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+/* Forth Section */
+.forthContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  gap: 50px;
+  justify-content: center;
+}
+.textFContainer {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 50px;
+}
+.Fhead {
+  font-size: 30px;
+  color: #ee5a36;
+  font-weight: bold;
+}
+.textFText {
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+}
+.CircleContainerF {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.l_ball {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  margin: 0 20px;
+  /* box-shadow: 10px 0px 20px rgba(250, 88, 39, 0.3); */
+}
+
+.l_ball + .l_ball {
+  margin-left: -45px;
+}
+.CircleContainerF .l_ball:nth-child(1) {
+  background: rgba(221, 79, 48, 0.25);
+}
+.CircleContainerF .l_ball:nth-child(2) {
+  background: rgba(250, 224, 74, 0.251);
+}
+.CircleContainerF .l_ball:nth-child(3) {
+  background: rgba(218, 56, 50, 0.6);
+}
+
+/* Fifth Circle */
+.fifthSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}
+.orbitContainer {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#parentdiv {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-color: #ee5a36;
+  border-radius: 150px;
+  top: -50%;
+  margin: 150px;
+}
+
+.div2 {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: 3px solid #ee5a36;
+  border-radius: 100px;
+}
+.fifTxtContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+}
+.fifTxt {
+  font-size: 40px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+/* Sixth Section */
+.fifTxtContainer {
+  display: flex;
+  height: 100vh;
+}
+.sixthTxtContainer {
+  display: flex;
+  flex-direction: column;
+}
+.sixthTxtContainer :nth-child(1) {
+  font-size: 75px;
+  color: #ffffff;
+  font-weight: bold;
+}
+.sixthTxtContainer :nth-child(2) {
+  font-size: 65px;
+  color: #ffffff;
+}
+.sixthTxtContainer :nth-child(3) {
+  font-size: 60px;
+  color: #ffffff;
+}
+
+/*  Contact Section */
+.contactCOntainer {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.contactTxtContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50px;
+}
+.contactTxtHead {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+.address {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 25px;
+  flex-direction: column;
+  gap: 20px;
+}
+.contactPh {
+  display: flex;
+  flex-direction: column;
+}
+.contactPhone {
+  color: #ee5a36;
+  font-size: 20px;
+  font-weight: 700;
+}
+.ph {
+  font-size: 18px;
+}
+.contactEmail {
+  display: flex;
+  flex-direction: column;
+}
+.emailTxt {
+  color: #ee5a36;
+  font-size: 20px;
+  font-weight: 700;
+}
+.email {
+  font-size: 18px;
+}
+.contactAddress {
+  display: flex;
+  flex-direction: column;
+}
+.AddTxtHead {
+  color: #f9de4b;
+  font-size: 20px;
+  font-weight: 700;
+}
+.Addtxt {
+  font-size: 18px;
+}
+
+/* Copyright Text */
+.copyRight {
+  /* height: 10vh; */
+  align-items: end;
+  padding-bottom: 20px;
+}
+
+/* Media query */
+/* Mobile Styles */
+@media only screen and (max-width: 768px) {
+  body {
+    padding: 5px;
+  }
+
+  /* Adjustments for Hero Section */
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    height: auto;
+    gap: 50px;
+    padding-bottom: 50px;
+  }
+  .title {
+    font-size: 30px;
+  }
+  .line {
+    margin-bottom: 10px;
+    width: 40px;
+    font-weight: bold;
+  }
+  .pyramid {
+    display: none;
+  }
+  .ball {
+    width: 10px;
+    height: 10px;
+    font-size: 16px;
+  }
+  .FiveBal {
+    display: none;
+  }
+  .balls {
+    display: none;
+    margin: 0;
+  }
+  .mediaQStyleL {
+    margin-right: 0px;
+  }
+  .mediaQStyleR {
+    margin-left: 0px;
+  }
+  /* Adjustments for Second Section */
+  .secondSection {
+    padding-top: 50px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    height: auto;
+    gap: 90px;
+  }
+  .circle-container {
+    width: 80%;
+  }
+  .planet {
+    width: 80%;
+  }
+  .circle-1,
+  .circle-2,
+  .circle-3,
+  .circle-4,
+  .circle-5 {
+    height: 200px;
+    width: 200px;
+  }
+  .textContainer {
+    width: 100%;
+    text-align: justify;
+    padding: 10px;
+  }
+  .contain,
+  .contain2 {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  /* Adjustments for Third Section */
+  .thirdSection {
+    gap: 50px;
+    flex-direction: column-reverse;
+  }
+  .textTC {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  /* Adjustments for Forth Section */
+  .forthContainer {
+    gap: 50px;
+    height: auto;
+  }
+  .Fhead {
+    font-size: 24px;
+  }
+  .textFText {
+    font-size: 16px;
+  }
+  .l_ball {
+    width: 130px;
+    height: 130px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+  }
+  .CircleContainerF {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Adjustments for Fifth Circle */
+  .fifthSection {
+    flex-direction: column;
+    height: auto;
+  }
+  .orbitContainer {
+    width: 100%;
+    margin-top: 300px;
+  }
+  #parentdiv {
+    width: 35px;
+    height: 35px;
+    margin: 50px;
+  }
+  .div2 {
+    width: 20px;
+    height: 20px;
+    border-width: 2px;
+  }
+  .fifTxtContainer {
+    width: 100%;
+    text-align: center;
+  }
+  .fifTxt {
+    font-size: 24px;
+  }
+
+  /* Adjustments for Sixth Section */
+  .sixthTxtContainer {
+    padding-left: 20px;
+  }
+  .sixthTxtContainer :nth-child(1) {
+    font-size: 48px;
+  }
+  .sixthTxtContainer :nth-child(2) {
+    font-size: 42px;
+  }
+  .sixthTxtContainer :nth-child(3) {
+    font-size: 36px;
+  }
+
+  /* Adjustments for Contact Section */
+  .contactTxtHead {
+    font-size: 36px;
+  }
+  .ph {
+    font-size: 16px;
+  }
+  .emailTxt {
+    font-size: 16px;
+  }
+  .AddTxtHead {
+    font-size: 16px;
+  }
+  .Addtxt {
+    font-size: 16px;
+  }
+
+  /* Adjustments for Copyright Text */
+  .copyRight {
+    padding-bottom: 10px;
+  }
+}
